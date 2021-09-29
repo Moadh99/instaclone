@@ -25,7 +25,7 @@ code {
 @media screen and (max-width: 415px) {
   #logo {
     position: relative;
-    left: 100px;
+    left: 88px;
   }
 }
 
@@ -74,6 +74,7 @@ input {
 }
 
 .list {
+  /* width: 204vh; */
   border: 0.5px solid rgba(128, 128, 128, 0.404);
 }
 
@@ -105,8 +106,9 @@ input {
 
 @media screen and (max-width: 415px) {
   #messanger {
+    display: flex;
     position: relative;
-    left: 88px;
+    left: 70px;
   }
 }
 
@@ -118,4 +120,98 @@ input {
 #likes {
   grid-area: 1/ 14 / 3;
   padding: 15px;
+}
+
+#box {
+  width: 187.7vh;
+  align-items: left;
+  justify-content: left;
+  align-items: center;
+  border: 0.5px solid rgba(128, 128, 128, 0.404);
+  margin-top: 3%;
+  padding: 3.7%;
+  display: grid;
+  display: flex;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 8, 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  text-align: center;
+}
+
+#box div {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  flex: 1;
+  text-align: center;
+}
+
+@media screen and (max-width: 415px) {
+  #box {
+    display: flex;
+    justify-content: left;
+    float: left;
+    width: 52vh;
+  }
+}
+
+@media screen and (max-width: 515px) {
+  #box {
+    display: flex;
+    justify-content: left;
+    float: left;
+  }
+}
+
+#profile {
+  display: flex;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: 18;
+  grid-column-gap: 60px;
+  grid-row-gap: 20px;
+  text-align: center;
+}
+
+#frame {
+  border-radius: 50%;
+  border: 3px solid rgb(180, 21, 133);
+  margin: 0;
+  padding: 2%;
+}
+
+.username {
+  text-align: center;
+}
+
+#image {
+  clip-path: circle(50% at 50% 50%);
+}
+
+#responsive {
+  /* width: 195vh; */
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  /* padding: 3%; */
+  /* display: grid; */
+  display: flex;
+  grid-template-columns: repeat(11, 1fr);
+  grid-template-rows: 8, 1fr;
+  grid-column-gap: 20px;
+  grid-row-gap: 10px;
+  text-align: center;
+}
+
+@media screen and (max-width: 400px) {
+  #responsive section {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #responsive {
+    display: flex;
+    justify-content: left;
+  }
 }

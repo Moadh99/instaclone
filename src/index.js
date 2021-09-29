@@ -40,6 +40,94 @@ function List() {
   );
 }
 
+const Usernames = [
+  {
+    username: "sdaf",
+  },
+];
+
+function Username() {
+  return (
+    <section className="username">
+      {Usernames.map((username) => {
+        // const { frame } = story;
+        return (
+          <section>
+            <div id="frame">
+              <div id="image">
+                <img
+                  src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Gull_portrait_ca_usa.jpg"
+                  alt=""
+                />
+              </div>
+            </div>
+
+            <div>
+              <p>Unknown</p>
+            </div>
+          </section>
+        );
+      })}
+    </section>
+  );
+}
+
+const Posts = [
+  {
+    user: "fs",
+  },
+];
+
+function Post() {
+  return (
+    <section className="post">
+      {Posts.map((post) => {
+        return (
+          <div>
+            <h1>UNKNOWN</h1>
+          </div>
+        );
+      })}
+    </section>
+  );
+}
+
+const Profiles = [
+  {
+    username: "GG",
+  },
+];
+
+function Profile() {
+  return (
+    <section className="profile">
+      {Profiles.map((profile) => {
+        return (
+          <section>
+            <div id="box">
+              <Username />
+              <Username />
+              <Username />
+              <Username />
+              <section id="responsive">
+                <Username />
+                <Username />
+                <Username />
+                <Username />
+                <Username />
+                <Username />
+                <Username />
+                <Username />
+                <Username />
+              </section>
+            </div>
+          </section>
+        );
+      })}
+    </section>
+  );
+}
+
 const Header = function (props) {
   const { input } = props.header;
   return (
@@ -51,4 +139,11 @@ const Header = function (props) {
   );
 };
 
-ReactDOM.render(<List />, document.getElementById("root"));
+ReactDOM.render(
+  <div>
+    <List />
+    <Profile />
+    <Post />
+  </div>,
+  document.getElementById("root")
+);
